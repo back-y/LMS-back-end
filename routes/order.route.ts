@@ -8,4 +8,4 @@ const orderRouter = express.Router();
 orderRouter.post("/create-order", isAutheticated, createOrder);
 orderRouter.get("/get-orders", updateAccessToken, isAutheticated, authorizeRoles("admin"), getAllOrders);
 
-export default orderRouter;
+export default orderRouter; 
